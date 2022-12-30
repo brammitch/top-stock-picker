@@ -2,11 +2,11 @@ require_relative '../lib/stock_picker'
 
 describe 'Stock Picker' do
   describe 'stock_picker' do
-    it 'picks the correct indexes when there are no edge cases' do
+    it 'picks the correct indices when there are no edge cases' do
       expect(stock_picker([14, 3, 6, 9, 15, 8, 6])).to eq([1, 4])
     end
 
-    it 'picks the correct indexes when the max value is last' do
+    it 'picks the correct indices when the max value is last' do
       expect(stock_picker([17, 3, 6, 9, 15, 8, 6, 1, 10, 2, 500])).to eq([7, 10])
     end
 
